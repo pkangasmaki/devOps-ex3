@@ -1,3 +1,3 @@
-# Perceived benefits of the topic-based communication compared to request-response (HTTP)
+ Perceived benefits of the topic-based communication compared to request-response (HTTP)
 
-# Main learnings
+ Main learnings
