@@ -8,6 +8,6 @@
 
  ### Main learnings
  
- I had never heard about topic-based communication before so I could say that it was the main learning from this exercise. I learnt how the basics of message brokers work and practiced how they work in practice with RabbitMQ. This exercise also gave me deeper level of understanding how things work in docker (Mainly the file-pattern). 
+ I had never heard about topic-based communication before so I could say that it was the main learning from this exercise. I learnt how the basics of message brokers work and how they work in practice with RabbitMQ. This exercise also gave me deeper level of understanding how things work in Docker since we had to write things in files and I was completely lost in that part at the beginning.
  
  
