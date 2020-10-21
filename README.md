@@ -1,11 +1,8 @@
  ### Perceived benefits of the topic-based communication compared to request-response (HTTP)
  
- Topic-based communication is versatile
- -One publisher can publish data to many subscribers 
- -One subscriber can get data from multiple publishers
+ Topic-based communication is versatile: One publisher can publish data to many subscribers and one subscriber can get data from multiple publishers.
  
- Loose coupling between publishers and subscribers 
- -Publishers don't have to be coupled with subscribers, they can be built separately and they don't have to know each others moves
+ Loose coupling between publishers and subscribers: Publishers don't have to be coupled with subscribers, they can be built separately and they don't have to know each others moves
  
  High scalability compared to basic request-response.
 
