@@ -1,0 +1,42 @@
+version: '3'
+volumes:
+  appData:
+services:
+  rabbitmq3:
+    image: rabbitmq:3-management
+    ports:
+      - 5672:5672
+
+  orig:
+    build: ./ORIG
+    ports:
+      - 0:3000
+    depends_on: 
+      - rabbitmq3
+
+  imed:
+    build: ./IMED
+    ports:
+      - 0:3001
+    depends_on: 
+      - rabbitmq3
+      - orig
+
+  obse:
+    build: ./OBSE
+    volumes:
+      - appData:/obse
+    ports:
+      - 0:3002
+    depends_on: 
+      - rabbitmq3
+      - imed
+
+  httpserv:
+    build: ./HTTPSERV
+    volumes:
+      - appData:/httpserv
+    ports:
+      - 8080:8080
+    depends_on: 
+      - obse
